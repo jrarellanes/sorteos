@@ -1,0 +1,25 @@
+<div id="container1">
+<h6>Registro de Participantes</h6>
+<% unless @person.nil? %>
+  <h3><%= @person.nombre %></h3>
+  <h6>Dependencia: <%= @person.dependencia %></h6>
+  <% unless @person.antiguedad.nil? %>
+  <h3 style="color: #942a25;">Antigüedad: <%= @person.antiguedad %></h3>
+  <% end %>
+  
+<% end %>
+
+<% unless @not_found.nil? %>
+<h2>Persona no encontrada </h2>
+<% end %>
+
+<%= form_tag(registrar_path, :method => :post) do %>
+  <p>
+    <%= label_tag :num_empleado, "Número de Empleado" %>
+    <%= text_field_tag :num_empleado %>
+  </p>
+  <p>
+    <%= submit_tag "Registrar"%>
+  </p>
+<% end %>
+</div>

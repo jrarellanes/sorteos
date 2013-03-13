@@ -1,0 +1,17 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1322702752.357808:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%d3c2f47d2d15503a0bc5d2b513584617I"logical_path;
+FI"bg_tile.jpg;
+TI"pathname;
+FI"($root/app/assets/images/bg_tile.jpg;
+FI"content_type;
+FI"image/jpeg;
+FI"
+mtime;
+FI"2011-11-30T18:24:01-07:00;
+FI"length;
+FI"479;
+FI"digest;
+F"%3544ed8fddfff7034303f69b7d9ae3a5I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

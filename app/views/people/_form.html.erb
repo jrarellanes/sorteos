@@ -1,0 +1,36 @@
+<div style="margin-top: 125px;">
+  <h1>Registro de personas</h1>
+  <%= form_for(@person) do |f| %>
+    <% if @person.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+        <ul>
+        <% @person.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :num_empleado %><br />
+      <%= f.text_field :num_empleado %>
+    </div>
+    <div class="field">
+      <%= f.label :nombre %><br />
+      <%= f.text_field :nombre %>
+    </div>
+    <div class="field">
+      <%= f.label :dependencia %><br />
+      <%= f.text_field :dependencia %>
+    </div>
+    <div class="field">
+      <%= f.label :antiguedad, 'Antigüedad' %><br/>
+      <%= f.text_field :antiguedad %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

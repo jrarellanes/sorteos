@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  num_empleado: 
+  nombre: MyString
+  dependencia: MyString
+
+two:
+  num_empleado: 
+  nombre: MyString
+  dependencia: MyString

@@ -1,0 +1,58 @@
+<% content_for :head do %>
+<style>
+  table {
+    color: #333;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+.table {
+  width: 100%;
+  margin-bottom: 18px;
+}
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.table th {
+  font-weight: bold;
+}
+.table thead th {
+  vertical-align: bottom;
+}
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+</style>
+<% end %>
+
+<div style="margin-top: 130px;">
+  <div style="margin-bottom: 12px;" class="digg_pagination"><%= will_paginate @people %></div>
+
+<table class="table table-condensed ">
+  <thead>
+    <th>Número de empleado</th>
+    <th>Nombre</th>
+    <th>Dependencia</th>
+  </thead>
+  <tbody>
+  <% @people.each do |person| %>
+  <tr>
+    <td><%= person.num_empleado %></td>
+    <td><%= person.nombre %></td>
+    <td><%= person.dependencia %></td>
+  </tr>
+      
+    
+  <% end %>
+  </tbody>
+</table>
+
+  <div style="margin-top: 12px;" class="digg_pagination"><%= will_paginate @people %></div>
+  </div>

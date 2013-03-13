@@ -1,0 +1,18 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1322702752.4007227:@value{I"
+class:EFI"StaticAsset;
+FI"id;
+F"%57fb8dec72e110a5939c8d89cbc89256I"logical_path;
+FI"logo-nuevo.png;
+TI"pathname;
+FI"+$root/app/assets/images/logo-nuevo.png;
+FI"content_type;
+FI"image/png;
+FI"
+mtime;
+FI"2011-11-30T18:24:01-07:00;
+FI"length;
+FI"
+39402;
+FI"digest;
+F"%4c64dc75435d2cd0ccfc73d5807386f6I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

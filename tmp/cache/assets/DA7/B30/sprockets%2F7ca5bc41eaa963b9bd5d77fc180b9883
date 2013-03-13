@@ -1,0 +1,48 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1322702752.0087593:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%78da93ecf1ecde6f031b9c1f41cf7a49I"logical_path;
+F"script.jsI"pathname;
+FI"+$root/app/assets/javascripts/script.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2011-11-30T18:24:01-07:00;
+FI"	body;
+FI"≠function cambiarText(texto){
+  $("#container").shuffleLetters({text:texto});
+}
+
+$(document).ready(function(){  
+	$("#container").shuffleLetters();
+  $('#userText').click(function(){
+    $.ajax({
+      url:"premiar.json", 
+      type:"GET",
+      success: function(data){
+        cambiarText(data);
+      },
+      error: function(data){
+        cambiarText(data.responseText);
+      }
+    });
+  });
+});
+
+
+
+
+;
+FI"asset_paths;
+F[I"+$root/app/assets/javascripts/script.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"+$root/app/assets/javascripts/script.js;
+FI"
+mtime;
+FIu:	Time!ÏÄÉˆ`
+:@_zoneI"MST;
+T:nano_numi':nano_deni:submicro"@:offseti˛êùI"hexdigest;
+F"%a218daf5b922f7d6b227cf17d78a6af8I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5
